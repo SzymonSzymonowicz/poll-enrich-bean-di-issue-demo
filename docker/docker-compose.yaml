@@ -1,0 +1,10 @@
+name: poll_enrich_issue
+services:
+  sftp-server-demo:
+    container_name: sftp-server-demo
+    image: atmoz/sftp
+    ports:
+      - "22:22"
+    volumes:
+      - ./sftp-server/users.conf:/etc/sftp/users.conf:ro
+      - ./sftp-server/dummy-files:/home/example_user/dummy-files
