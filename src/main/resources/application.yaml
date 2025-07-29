@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: poll-enrich-bean-di-issue-demo
+
+camel:
+  main:
+    main-run-controller: true
+    shutdown-timeout: 5
+    use-mdc-logging: true
+
+sftp:
+  server:
+    host: localhost
+    port: 22
+    username: example_user
+    password: password
+    path: dummy-files
